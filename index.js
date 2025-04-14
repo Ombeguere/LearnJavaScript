@@ -99,3 +99,94 @@ document.getElementById("mybutton").onclick = function(){
 }
 
 */
+
+//----------------------------
+/*
+
+//if statements
+
+document.getElementById("mybutton").onclick = function()
+{
+    let age = Number(document.getElementById("myinput").value);
+
+    if(age >= 18)
+    {
+        document.getElementById("myh2").textContent = `you are an adult`;
+    }
+    else
+    {
+        document.getElementById("myh2").textContent = `you are a minor`;
+    }
+}
+
+*/
+
+//----------------------------
+
+/*
+//les checkbox
+//on utilise "checked"
+const checkbox = document.getElementById("mycheckbox");
+const visa = document.getElementById("visa");
+const master = document.getElementById("master");
+const paypal = document.getElementById("paypal");
+const submit = document.getElementById("mybutton");
+const p1 = document.getElementById("myp1");
+const p2 = document.getElementById("myp2");
+
+submit.onclick = function(){
+    if(checkbox.checked)
+    {
+        p1.textContent = "You are subscribed";
+    }
+    else
+    {
+        p1.textContent = "You are NOT subscribed";
+    }
+
+    if(visa.checked)
+    {
+        p2.textContent = "You are paying with a visa card";
+    }else if(master.checked)
+    {
+        p2.textContent = "You are paying with a master card";
+    }else if(paypal.checked)
+    {
+        p2.textContent = "You are paying with paypal";
+    }else
+    {
+        p2.textContent = "You must choose a payment type";
+    }
+   
+}
+    */
+
+//-------------------------
+/*
+//the ternary operator
+let age = 12;
+let message = age>18 ? "you are an adult" : "you are a minor";
+
+console.log(message);
+*/
+
+//-------------------------
+
+/*
+//functions
+
+//a fonction that say happy birthday
+function happyBirthday(username,age){
+    console.log(`happy birthday ${username}`);
+    console.log("beess bou déloussi mo néx");
+    console.log(`you are ${age} years old`);
+}
+
+//a function to add two numbers
+function add(a,b){
+    return a+b;
+}
+ 
+happyBirthday("samba",22);
+console.log(add(2,4));
+*/
